@@ -1,3 +1,4 @@
+
 name: Build on DockerHub
 on:
 push:
@@ -22,8 +23,8 @@ build:
       with:
         context: ./
         push: true
-        dockerfile: ./Dockerfile   # Specify the path to your Dockerfile
-        tags: ./Dockerfile:latest
+        #dockerfile: ./Dockerfile   # Specify the path to your Dockerfile
+        tags: moisesgc/webacademy:latest
 deploy:
   runs-on: ubuntu-latest
   steps:
