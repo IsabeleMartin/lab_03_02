@@ -1,6 +1,7 @@
 name: Build on DockerHub
 on:
-push:
+  push:
+    branches: [ "master" ]  # ajuste se sua branch for outra
 env:
 DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
 DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
